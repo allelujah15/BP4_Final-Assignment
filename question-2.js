@@ -8,3 +8,18 @@ const userTaskList = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+
+userTaskList.push({id: 5, task: "Walk the dog" });
+function updateTask(id, newTask){
+  const taskToUpdate = userTaskList.find(task => task.id === id);
+  if (taskToUpdate){
+    taskToUpdate.task = newTask;
+  } else {
+    console.log(`Task With ID ${id} not found`)
+  }
+}
+updateTask(4,"Go to the gym");
+userTaskList.splice(4)
+console.log(userTaskList)
+
+

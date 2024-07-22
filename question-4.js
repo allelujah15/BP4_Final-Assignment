@@ -2,6 +2,11 @@
 
 function calculateShippingCost() {
   // เริ่มเขียนโค้ดที่นี่
+  return orderTotal1 >= 4000
+  ? "Shipping is free."
+  : orderTotal1 >= 2000
+  ? "Shipping cost is 250 Baht."
+  : "Shipping cost is 500 Baht.";
 }
 
 // ตัวอย่างการใช้งาน
